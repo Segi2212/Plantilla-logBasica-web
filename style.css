@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+/*
+font-family: 'Roboto', sans-serif;
+*/
+:root {
+    --Fondo: #313337;
+    --FormFondo: #1E1E1E;
+    --FormBorde: #2BB3FF;
+    --FormLink: #2BB3FF;
+    --FormTexto: #fff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    background-color: var(--Fondo);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+
+form {
+    background-color: var(--FormFondo);
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 2px var(--FormBorde);
+    width: 350px;
+    height: 500px;
+    position: relative;
+}
+
+form img {
+    width: 100%;
+    height: 120px;
+    margin-top: -60px;
+    position: absolute;
+}
+
+form input {
+    margin-top: 25px;
+    width: 80%;
+    height: 30px;
+    font-family: "Roboto","FontAwesome";
+    color: white;
+    font-size: 17px;
+    background-color: unset;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    text-indent: 10px;
+    outline: none;
+    border: none;
+    border-bottom: solid 2px var(--FormLink);
+}
+
+input::placeholder {
+    color: white;
+    opacity: .7;
+    font-weight: 500;
+}
+
+input:invalid{
+    border-color: var(--FormTexto);
+}
+
+.cont_inputs{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#submit{
+    background-color: var(--FormLink);
+    border: 0;
+    width: 75%;
+    height: auto;
+    padding: 10px 0 10px 0;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#submit:hover{
+    transition: 1s;
+    background-color: var(--FormTexto);
+    color: var(--FormLink);
+}
+
+.links{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--FormTexto);
+    width: 90%;
+    margin: 20px auto 10px;
+    text-align: center;
+    opacity: .7;
+}
+.links a{
+    color: var(--FormLink);
+    text-decoration: none;
+}
