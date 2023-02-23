@@ -57,6 +57,26 @@ form input {
     border: none;
     border-bottom: solid 2px var(--FormLink);
 }
+.ses_activa{
+    margin-top: 25px;
+    width: 80%;
+    height: 50px;
+    font-family: "Roboto","FontAwesome";
+    color: white;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ses_activa input{
+    margin: 0 10px 0;
+    width: 25px;
+}
+
+.ses_activa p{
+    white-space: nowrap;
+}
 
 input::placeholder {
     color: white;
